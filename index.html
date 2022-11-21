@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="https//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>kuma785のプロフィール</title>
   <meta name="description" content="">
 </head>
@@ -14,11 +13,11 @@
     <div id="logo">
       kuma785
     </div>
-    <nav>
-      <a href="index.html#profile">PROFILE</a>
-      <a href="index.html#hobby">HOBBY</a>
-      <a href="index.html#career">CAREER</a>
-      <a href="index.html#message">MESSAGE</a>
+    <nav id="nav-pc">
+      <a class="nav-ani" href="index.html#profile">PROFILE</a>
+      <a class="nav-ani" href="index.html#hobby">HOBBY</a>
+      <a class="nav-ani" href="index.html#career">CAREER</a>
+      <a class="nav-ani" href="index.html#message">MESSAGE</a>
     </nav>
   </header>
   <main>
@@ -33,7 +32,7 @@
       
       
       <img class="top-pic" src="../portfolio/images/autumn.jpg" alt="秋">-->
-      <img class="top-pic" src="https://github.com/kuma785/Portfolio/blob/master/images/spring.jpg?raw=true" alt="春">  
+      <img class="top-pic" id="top-pic" src="https://github.com/kuma785/Portfolio/blob/master/images/spring.jpg?raw=true" alt="春">  
     </section>
     <section id="profile">
       <h2>PROFILE</h2>
@@ -71,7 +70,7 @@
         <br>癒されたいときにお勧めのスポットを３つご紹介します！
       </p>
       <div id="hobby-main">
-        <div class="hobby-block">
+        <div id="hobby-block1" class="slideIn">
           <img class="hobby-pic" src="https://github.com/kuma785/Portfolio/blob/master/images/akita.jpg?raw=true" alt="秋田">
           <div class="hobby-text">
             <h4>秋田県　田沢湖</h4>
@@ -80,7 +79,7 @@
             </p>
           </div>
         </div>
-        <div class="hobby-block2">
+        <div id="hobby-block2" class="slideIn2">
           <img class="hobby-pic" src="https://github.com/kuma785/Portfolio/blob/master/images/yamagata.jpg?raw=true" alt="山形">
           <div class="hobby-text">
             <h4>山形県　立石寺</h4>
@@ -89,7 +88,7 @@
             </p>
           </div>
         </div>
-        <div class="hobby-block">
+        <div id="hobby-block3" class="slideIn">
           <img class="hobby-pic" src="https://github.com/kuma785/Portfolio/blob/master/images/hukusima.jpg?raw=true" alt="福島">
           <div class="hobby-text">
             <h4>福島県　五色沼</h4>
@@ -144,8 +143,6 @@
       <a href="index.html#messege">MESSAGE</a>
     </div>
   </footer>
-  <script src="main.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</body>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
