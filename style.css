@@ -136,7 +136,7 @@ nav{
 .slideIn{
   opacity: 0;
   transform: translateX(200px);
-  transition: all 1s 0s ease-out;
+  transition: all 3s 0s ease-out;
 }
 
 .slideIn2{
@@ -336,6 +336,22 @@ nav{
     margin: 0%;
   
   }
+
+  .slideIn{
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 2s 0s ease-out;
+  }
+  
+  .slideIn2{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 2s 0s ease-out;
+  }
+  
+  .animated {
+    opacity: 1;
+    transform: translateX(0);}
   
   #career{
     width: 90%;
