@@ -1,6 +1,10 @@
 const hobbyblock1 = document.getElementById('hobby-block1')
 const hobbyblock2 = document.getElementById('hobby-block2')
 const hobbyblock3 = document.getElementById('hobby-block3');
+const toppic1 = document.getElementById('top-pic1')
+const toppic2 = document.getElementById('top-pic2')
+const toppic3 = document.getElementById('top-pic3')
+const toppic4 = document.getElementById('top-pic4')
 
 window.addEventListener('scroll', ()=> {
   let y1 = hobbyblock1.getBoundingClientRect();
@@ -33,3 +37,33 @@ window.addEventListener('scroll', ()=> {
 });
 
 
+const carusel1 = setTimeout(() =>{
+  toppic1.classList.add("appear");
+},3000);
+
+const carusel2 = setTimeout(() =>{
+  toppic1.classList.remove("appear");
+  toppic2.classList.add("appear");
+},6000);
+
+const carusel3 = () =>{
+  toppic1.classList.remove("appear");
+  toppic2.classList.add("appear");
+  
+};
+
+const carusel4 = () =>{
+  
+};
+
+const carusel = setInterval(()=>{
+  carusel1();
+  carusel2();
+  // setTimeout(carusel1(),0);
+ // setTimeout(carusel2(),5);
+ // setTimeout(carusel3(),10);
+ // setTimeout(carusel4(),15);
+}
+  ,10000);
+
+  carusel();
