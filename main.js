@@ -65,5 +65,3 @@ const carusel = setInterval(()=>{
  // setTimeout(carusel4(),15);
 }
   ,10000);
-
-  carusel();
