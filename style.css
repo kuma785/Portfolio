@@ -1,6 +1,9 @@
 /*PC*/
 
 @media screen and (min-width: 768px) {
+  html{
+    scroll-behavior: smooth;
+  }
 
   body{
     width: 100%;
@@ -11,28 +14,56 @@
   #top-carusel{
     width: 100%;
     height: 50%;
+    overflow: hidden;
+    display: flex;
   }
  
+  #top-pic1,#top-pic2,#top-pic3,#top-pic4{
+    width:0px;
+  }
+
+  .appear{
+    opacity: 1;
+    width: 100vw;
+  }
+
+  .top-pic{
+    width: 100%;
+    height: auto;
+  }
+
   .hide{
     display: none;
     opacity: 0;
     transition: all 3s 0s ease-out;
   }
-
-  #top-pic1,#top-pic2,#top-pic3,#top-pic4{
-    width: 100%;
-  }
-
-  .appear{
-    opacity: 1;
-    width: 100%;
-  }
   
   h2{
+    display: inline-block;
     margin-top: 5%;
     font-size: 1.7rem;
     font-weight: bold;
-    text-shadow: 2px 2px 3px rgb(185, 185, 185);
+    padding: 0rem 1rem;
+    position: relative;
+    color: #333;
+    text-shadow: 0 0 2px white;
+  }
+
+  h2:before {
+    content: "";
+    position: absolute;
+    background: #9de5ff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+    box-shadow: 0rem 0rem 0rem 0.2rem #9de5ff;
+    border: dashed 0.2rem rgb(255, 255, 255);
+    padding: 0rem;
   }
 
   p{
@@ -50,7 +81,7 @@
     padding: 1% 2%;
     font-weight: bold;
     font-size: 1.3rem;
-    color:rgb(58, 118, 248);
+    color:rgb(127, 187, 255);
   }
 
   nav{
@@ -84,7 +115,7 @@
 
   .link{
     font-weight: bold;
-    color: rgb(101, 7, 209);
+    color: rgb(164, 115, 219);
     text-decoration: none;
   }
 
@@ -236,15 +267,38 @@
     font-weight: bold;
     color: white;
   }
+
+  #back-btn{
+    width:5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 66, 208);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: opacity 1s 0s ease;
+    opacity: 0;
+  }
+
 }
 
 
 /*スマホ*/
 @media screen and (max-width: 767px) {
+  html{
+    scroll-behavior: smooth;
+  }
 
   body{
     width: 100%;
-    margin: 0px;
     min-width: 980px;
   }
   
@@ -258,11 +312,27 @@
     height: auto;
   }
   
-  h2{
-    margin-top: 5%;
+  h2 {
+    position: relative;
     font-size: 1.7rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgb(185, 185, 185);
+    padding: 0rem 1rem;
+    text-align: center;
+    margin: 1.5em 0;
+  }
+
+  h2:before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    width: 150px;
+    height: 58px;
+    border-radius: 50%;
+    border: 5px solid #9de5ff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   
   p{
@@ -280,7 +350,7 @@
     padding: 1% 2%;
     font-weight: bold;
     font-size: 1.3rem;
-    color:rgb(58, 118, 248);
+    color:rgb(127, 187, 255);
   }
   
   #nav-pc{
@@ -298,7 +368,7 @@
   
   .link{
     font-weight: bold;
-    color: rgb(101, 7, 209);
+    color: rgb(164, 115, 219);
     text-decoration: none;
   }
   
@@ -433,6 +503,24 @@
   #mail > a{
     font-weight: bold;
     color: white;
-    
   }
+
+  #back-btn{
+    width:5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 66, 208);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: opacity 1s 0s ease;
+    opacity: 0;
 }

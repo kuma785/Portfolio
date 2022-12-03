@@ -1,11 +1,16 @@
 const hobbyblock1 = document.getElementById('hobby-block1')
 const hobbyblock2 = document.getElementById('hobby-block2')
 const hobbyblock3 = document.getElementById('hobby-block3');
+const toppic = document.getElementsByClassName('top-pic')
 const toppic1 = document.getElementById('top-pic1')
 const toppic2 = document.getElementById('top-pic2')
 const toppic3 = document.getElementById('top-pic3')
 const toppic4 = document.getElementById('top-pic4')
+const backbtn = document.getElementById('back-btn')
 
+
+
+//スライドイン
 window.addEventListener('scroll', ()=> {
   let y1 = hobbyblock1.getBoundingClientRect();
   let scroll1 = window.innerHeight-y1.height;
@@ -36,6 +41,20 @@ window.addEventListener('scroll', ()=> {
   }
 });
 
+//カルーセル
+let wid = window.innerWidth+"px";
+toppic1.style.width = wid;
+toppic2.style.width = wid;
+toppic3.style.width = wid;
+toppic4.style.width = wid;
+console.log(wid);
+
+/*
+
+
+
+const width = 500+'px';
+toppic1.style.width =width;
 
 const carusel1 = setTimeout(() =>{
   toppic1.classList.add("appear");
@@ -65,3 +84,26 @@ const carusel = setInterval(()=>{
  // setTimeout(carusel4(),15);
 }
   ,10000);
+
+*/
+
+
+//クリックでTOPに戻る
+const toTop =()=>{
+  window.scrollTo(0,0);
+};
+
+//スクロールで表示非表示切り替え
+window.addEventListener('scroll', ()=> {
+  const scrollValue = document.scrollingElement.scrollTop;
+
+  if(scrollValue >=400){;
+    backbtn.style.opacity=1;
+    backbtn.addEventListener('click',toTop);
+  }
+  else{
+    backbtn.style.opacity=0;
+    backbtn.removeEventListener('click',toTop);
+  }
+});
+
