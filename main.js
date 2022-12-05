@@ -2,6 +2,7 @@ const hobbyblock1 = document.getElementById('hobby-block1')
 const hobbyblock2 = document.getElementById('hobby-block2')
 const hobbyblock3 = document.getElementById('hobby-block3');
 const toppic = document.getElementsByClassName('top-pic')
+const topcal = document.getElementById('top-carusel')
 const toppic1 = document.getElementById('top-pic1')
 const toppic2 = document.getElementById('top-pic2')
 const toppic3 = document.getElementById('top-pic3')
@@ -41,13 +42,9 @@ window.addEventListener('scroll', ()=> {
   }
 });
 
-//カルーセル
-let wid = window.innerWidth+"px";
-toppic1.style.width = wid;
-toppic2.style.width = wid;
-toppic3.style.width = wid;
-toppic4.style.width = wid;
-console.log(wid);
+//カルーセル 作業中！！！！！
+//let topwid = document.body.clientWidth;
+//console.log(topwid);
 
 /*
 
