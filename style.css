@@ -12,10 +12,17 @@
     min-width: 768px;
   }
 
+  #carusel{
+    width: 100%;
+    text-align: center;
+  }
+
   #buttons{
     width: 50%;
-    display: none;
+    display: flex;
     justify-content: space-around;
+    margin: 1% 20%;
+    padding: 0% 0%;
   }
 
   #top-carusel{
@@ -319,6 +326,10 @@
     overflow: hidden;
     display: flex;
   }
+
+  #buttons{
+    display:none;
+  }
   
   .top-pic{
     width: 100%;
@@ -519,14 +530,15 @@
   }
 
   #back-btn{
-    width:5rem;
-    height: 5rem;
+    width:4rem;
+    height: 4rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(64, 66, 208);
     color: white;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     border-radius: 50%;
