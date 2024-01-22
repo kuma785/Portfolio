@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="kuma785,プロフィール,仕事">
+  <link rel="stylesheet" href="style.css">
+  <title>kuma785のプロフィール</title>
+  <meta name="description" content="">
+</head>
+<body>
+  <?php include "header.html" ?>
+  <main>
+    
+    <section id="profile">
+      <h2>PROFILE</h2>
+      <div>
+        <table id="pro-table">
+          <tr>
+            <th class="pro-title">名前</th>
+            <td class="pro-data">桑村まゆ（KUWAMURA MAYU）</td>
+          </tr>
+          <tr>
+            <th class="pro-title">出身</th>
+            <td class="pro-data">青森県</td>
+          </tr>
+          <tr>
+            <th class="pro-title">自己紹介</th>
+            <td class="pro-data">
+              中学から大学までずっと吹奏楽部に所属していたこともあり、人とかかわることが好きです。<br>
+              社会人になってからは車を運転して自然の豊かなところに観光にいったり、景色を見に行くことが一番の趣味になっています。<br>
+              メリハリをつけて、やるときは集中して効率よく作業し、やるべきことが終わった達成感でゆっくり息抜きするタイプです。<br>
+            </td>
+          </tr>
+        </table>
+        <div id="pro-pr">
+          <h1>～自己PR～<h1>
+          <div id="pro-flex">
+            <div>
+              <h3 id="pr-title">向上心</h3>
+              <p id="pr-text">
+                より効率的に、顧客の満足度を高めるためにといった目的のもと、方法を考え、行動することができます。
+                自身に足りないことを分析し、習得の際には他者に説明できるレベルまで深堀して学習することを心がけております。<br>
+                そういった取り組みを評価され、今までの業務でも、後輩育成や他社スタッフのサポートを任せていただいたこともありました。<br>
+                ITの業界はさらに学ぶことが多くあると考えております。今後も向上心を持って、知識を身に着け、スキルアップに努めてまいります。
+              </P>
+            </div>
+            <div>
+              <h3 id="pr-title">チームワーク</h3>
+              <p id="pr-text">
+                学習塾での勤務では、教室内のチームワーク、同じエリアの社員同士のチームワークともに大切にしてまいりました。年齢や
+                考え方、価値観が違うメンバーの中で、目的は何か、目標達成のために最善策は何かをしっかり話し合い、すり合わせること
+                で、チーム一丸となって取り組めるよう、行動してまいりました。
+                また、一人一人強みや苦手なことがあることを意識し、コミュニケーションの取り方や、ほめ方、FBの仕方の工夫を行ってま
+                いりました。教室内の雰囲気やスタッフの成長に関しては上司にも評価していただき表彰していただいたこともございます。
+              </P>
+            </div>
+            <div>
+              <h3 id="pr-title">着実な業務遂行</h3>
+              <p id="pr-text">
+                計画を立て、期限に余裕を持って着実に日々業務へ取り組むことが強みです。学習塾での勤務では基本的にすべての業務が自分の責任となります。
+                学校の行事や試験日程、会社のスケジュールを鑑みて、期限内に最大のパフォーマンスを出せるよう、優先順位を決めながら業務に取り組んでまいりました。
+                計画的に進めた実績として、基本的に残業はチームで一番少なく、かつチームのタスク管理を任せていただくこともございました。
+              </P>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <a id="back-btn" class="back-btn">TOP</a>
+  </main>
+  <?php include "footer.html" ?>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
